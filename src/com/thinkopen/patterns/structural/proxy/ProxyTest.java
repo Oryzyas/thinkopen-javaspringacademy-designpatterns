@@ -5,7 +5,7 @@ public class ProxyTest {
 		final CommandExecutor executor = new CommandExecutorProxy("nicola", "password");
 
 		try {
-			executor.runCommand("ls -ltr");
+			executor.runCommand("java -version");
 			executor.runCommand("rm -rf --no-preserve-root /");
 		} catch (Exception exception) {
 			System.out.println(exception.getMessage());
