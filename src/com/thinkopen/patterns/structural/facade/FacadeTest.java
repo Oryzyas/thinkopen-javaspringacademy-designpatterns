@@ -2,8 +2,8 @@ package com.thinkopen.patterns.structural.facade;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import static com.thinkopen.patterns.structural.facade.HelperFacade.DatabaseType;
-import static com.thinkopen.patterns.structural.facade.HelperFacade.ReportType;
+import static com.thinkopen.patterns.structural.facade.FacadeHelper.DatabaseType;
+import static com.thinkopen.patterns.structural.facade.FacadeHelper.ReportType;
 
 public class FacadeTest {
 
@@ -14,8 +14,8 @@ public class FacadeTest {
 		generateReportsWithoutFacade(table);
 
 		// Più snello
-		HelperFacade.generateReport(DatabaseType.MYSQL, ReportType.HTML, table);
-		HelperFacade.generateReport(DatabaseType.ORACLE, ReportType.PDF, table);
+		FacadeHelper.generateReport(DatabaseType.MYSQL, ReportType.HTML, table);
+		FacadeHelper.generateReport(DatabaseType.ORACLE, ReportType.PDF, table);
 	}
 
 	private static void generateReportsWithoutFacade(final String table) throws SQLException {

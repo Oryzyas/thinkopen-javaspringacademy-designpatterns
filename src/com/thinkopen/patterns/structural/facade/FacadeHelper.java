@@ -3,7 +3,7 @@ package com.thinkopen.patterns.structural.facade;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class HelperFacade {
+public class FacadeHelper {
 
 	public static void generateReport(DatabaseType dbType, ReportType reportType, String table) throws SQLException {
 		Connection con = null;
@@ -30,7 +30,7 @@ public class HelperFacade {
 
 				switch (reportType) {
 					case HTML:
-						oracleHelper.generateOracleHTLMReport(table, con);
+						oracleHelper.generateOracleHTMLReport(table, con);
 						break;
 					case PDF:
 						oracleHelper.generateOraclePDFReport(table, con);
