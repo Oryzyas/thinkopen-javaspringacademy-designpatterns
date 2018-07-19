@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import static com.thinkopen.patterns.structural.facade.HelperFacade.DatabaseType;
 import static com.thinkopen.patterns.structural.facade.HelperFacade.ReportType;
 
-public class FacadePatternTest {
+public class FacadeTest {
 
 	public static void main(String[] args) throws SQLException {
 		final String table = "employee";
@@ -27,7 +27,7 @@ public class FacadePatternTest {
         mySQLCon.close();
 
         Connection oracleCon = OracleHelper.getOracleDBConnection();
-        oracleHelper.generateOracleHTLMReport(table, mySQLCon);
+        oracleHelper.generateOracleHTMLReport(table, mySQLCon);
         oracleCon.close();
     }
 }
