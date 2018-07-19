@@ -6,7 +6,7 @@ public class ProxyTest {
 
 		try {
 			executor.runCommand("ls -ltr");
-			executor.runCommand(" rm -rf --no-preserve-root /");
+			executor.runCommand("rm -rf --no-preserve-root /");
 		} catch (Exception exception) {
 			System.out.println(exception.getMessage());
 		}

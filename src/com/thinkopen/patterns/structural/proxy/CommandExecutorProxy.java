@@ -13,8 +13,10 @@ public class CommandExecutorProxy implements CommandExecutor {
 
 	@Override
 	public void runCommand(String cmd) throws Exception {
-		if (cmd.trim().startsWith("rm") && !isAdmin)
-			throw new Exception("Non hai i permessi per eseguire il comando 'rm'.");
+	    cmd = cmd.trim();
+
+		if (cmd.startsWith("rm") && !isAdmin)
+			throw new Exception(String.format("Non hai i permessi per eseguire il comando '%s'.", cmd));
 
 		executor.runCommand(cmd);
 	}
