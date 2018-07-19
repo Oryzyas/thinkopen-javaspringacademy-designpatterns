@@ -3,11 +3,9 @@ package com.thinkopen.patterns.structural.flyweight;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import static com.thinkopen.patterns.structural.flyweight.ShapeFactory.ShapeType;
 
 public class DrawingClient extends JFrame {
-	private static final long serialVersionUID = -1350200437285282550L;
 	private final int WIDTH;
 	private final int HEIGHT;
 
