@@ -1,6 +1,7 @@
 package com.thinkopen.patterns.structural.bridge;
 
 public class Pentagon extends Shape {
+
 	public Pentagon(Color color) {
 		super(color);
 	}
