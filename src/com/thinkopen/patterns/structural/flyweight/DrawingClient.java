@@ -3,6 +3,7 @@ package com.thinkopen.patterns.structural.flyweight;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+
 import static com.thinkopen.patterns.structural.flyweight.ShapeFactory.ShapeType;
 
 public class DrawingClient extends JFrame {

@@ -2,6 +2,7 @@ package com.thinkopen.patterns.structural.facade;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+
 import static com.thinkopen.patterns.structural.facade.FacadeHelper.DatabaseType;
 import static com.thinkopen.patterns.structural.facade.FacadeHelper.ReportType;
 

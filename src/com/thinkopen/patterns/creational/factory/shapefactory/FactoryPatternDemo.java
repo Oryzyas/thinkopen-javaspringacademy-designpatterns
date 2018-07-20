@@ -1,4 +1,4 @@
-package com.thinkopen.patterns.creational.factory;
+package com.thinkopen.patterns.creational.factory.shapefactory;
 
 public class FactoryPatternDemo {
 
